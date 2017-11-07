@@ -20,9 +20,7 @@ bool intpoint_inside_trigon(float s[2], float a[2], float b[2], float c[2])
     int as_y = s[1]-a[1];
 
     bool s_ab = (b[0]-a[0])*as_y-(b[1]-a[1])*as_x > 0;
-
     if((c[0]-a[0])*as_y-(c[1]-a[1])*as_x > 0 == s_ab) return false;
-
     if((c[0]-b[0])*(s[1]-b[1])-(c[1]-b[1])*(s[0]-b[0]) > 0 != s_ab) return false;
 
     return true;
@@ -112,29 +110,3 @@ int main()
   return 0;
 }
 
-
-//maneira de declarar uma matriz usando vector nice
-// The dynamic programming:
-// vector<vector<long> > f(n + 1, vector<long>(k+1) );
-//como acessar  f[n+1][k+1];
-
-/*
- string expression = "222 + 33 - 2 + 0";
-string computeExpression(string exp)
-{
-    int number, sum;
-    char op;
-    stringstream ss, iss;
-
-    iss.str(exp);
-    iss >> number;
-    sum = number;
-    while (iss >> op >> number)
-    {
-        op == '+' ? sum+=number : sum-=number;
-    }
-    ss << sum;
-
-    return ss.str();
-}
-*/
