@@ -1,2 +1,2 @@
 
-# Maratona de Programção 2017: primeira fase
+# Maratona de Programação 2017: primeira fase
