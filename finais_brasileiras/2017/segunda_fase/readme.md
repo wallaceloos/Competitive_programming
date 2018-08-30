@@ -1,1 +1,1 @@
-s
+Complete Naebbirac’s Sequence -- Ad Hoc/Math
